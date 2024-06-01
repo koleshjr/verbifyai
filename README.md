@@ -1,28 +1,75 @@
-# VERBIFY AI
 ## Description
-An AI speech therapist built as a solution to the challenges faced by children with speech disorders.
 
-Children with speech disorders, such as those diagnosed with autism spectrum disorder (ASD) or dyspraxia, encounter significant challenges in effectively communicating due to difficulties in articulation and pronunciation. Traditional speech therapy methods often fall short, as they may not be readily accessible or tailored to meet the unique needs of each individual. Moreover, consistent one-on-one therapy sessions can be both time-consuming and financially burdensome, limiting accessibility for many children who could benefit from such support. As a result, there is a pressing need for innovative and accessible solutions that address the specific communication challenges faced by children with speech disorders, ensuring they receive the personalized support required to thrive and communicate confidently in their daily lives.
+**Verbify AI** is an innovative AI-powered speech therapy platform designed to address the challenges faced by children with speech disorders, such as those diagnosed with autism spectrum disorder (ASD) or dyspraxia. These children often struggle with articulation and pronunciation, making effective communication a significant challenge. Traditional speech therapy methods can be inaccessible, not tailored to individual needs, time-consuming, and financially burdensome. Consequently, many children who could benefit from such support are unable to access it, underscoring the need for a more innovative and accessible solution.
 
-Verbify AI presents a solution to the challenges faced by children with speech disorders. By integrating Gemini's advanced AI capabilities into our platform, Verbify AI offers personalized and accessible speech therapy solutions tailored to the unique needs of each child. 
+Verbify AI leverages advanced AI capabilities to offer personalized and accessible speech therapy solutions. By integrating Gemini's cutting-edge AI technology, Verbify AI provides tailored interventions to meet the unique needs of each child. The platform features a sound-to-sound AI model, utilizing Gemini Pro, specifically designed for speech therapy. This model transcribes sound into text via an API, allowing for precise personalization.
 
-It is  a sound-to-sound AI model utilizing Gemini Pro specifically designed for speech therapy to aid children in improving their speech. This AI transcribes sound into text through an API, allowing for accurate personalization to meet the needs of each child. Trained on various datasets, the model tailors interventions based on the child's current level, providing encouragement on failures and applause upon reaching milestones. Through its empathetic training approach, Verbify AI supports children as they progress through therapy, celebrating achievements and providing personalized feedback. This empowers children with speech disorders to enhance their communication skills, fostering confidence and independence in their interactions.
-
-
+The AI is trained on diverse datasets, enabling it to tailor interventions based on the child's current speech level. It provides encouragement during failures and celebrates achievements, fostering an empathetic and supportive therapy experience. Verbify AI empowers children with speech disorders to enhance their communication skills, build confidence, and gain independence in their interactions.
 
 ## Features
-1. AI speech therapist .
 
+1. **AI Speech Therapist**: Provides personalized speech therapy sessions using advanced AI technology.
+2. **Sound-to-Sound Model**: Utilizes Gemini Pro to transcribe sound into text for accurate personalization.
+3. **Empathetic Training Approach**: Offers encouragement and applause to support children's progress and achievements.
+4. **Tailored Interventions**: Adapts therapy based on the child's current speech level.
+5. **Accessible and Convenient**: Overcomes the limitations of traditional speech therapy by offering a flexible and affordable solution.
 
 ## Usage
-- `git clone https://github.com/koleshjr/verbifyai.git`
-- add `.env` file.
-```
-MODEL_NAME = " "  # transcription model
-HUGGINGFACE_READ_TOKEN = " "
-ELLEVEN_LABS_API = " "
-GOOGLE_API_KEY = " ”
 
-```
-- run `make build` to install dependencies
-- run `make run` to start the server
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/koleshjr/verbifyai.git
+   ```
+2. Add a `.env` file with the following content:
+   ```plaintext
+   MODEL_NAME = " "  # transcription model
+   HUGGINGFACE_READ_TOKEN = " "
+   ELLEVEN_LABS_API = " "
+   GOOGLE_API_KEY = " "
+   ```
+3. Install dependencies:
+   ```bash
+   make build
+   ```
+4. Start the server:
+   ```bash
+   make run
+   ```
+
+
+## Usage (Windows)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/koleshjr/verbifyai.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd verbifyai
+   ```
+
+3. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+
+4. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Add a `.env` file with the following content:
+   ```plaintext
+   MODEL_NAME = " "  # transcription model
+   HUGGINGFACE_READ_TOKEN = " "
+   ELLEVEN_LABS_API = " "
+   GOOGLE_API_KEY = " "
+   ```
+
+6. Start the server:
+   ```bash
+   python app.py
+   ```
+
